@@ -150,15 +150,50 @@ EOF  all  create  destroy  help  quit  show  update
 (hbnb) quit
 ```
 
+# AirBnB Clone - Version 4
+
+This is the fourth version of the AirBnB clone project, building upon the previous versions. In this version, we have made the following enhancements:
+
+## New Features
+
+- **Dynamic Amenities Filter**: The amenities filter in the search page is now dynamic. Users can select and unselect amenities, and the selected amenities will be displayed in the amenities filter section.
+
+- **API Status Indicator**: An API status indicator has been added to the header of the web application. It displays the current status of the API (OK or not OK) in real-time.
+
+- **Front-end Place Loading**: The places displayed on the search page are now loaded dynamically from the front-end using JavaScript. This enhances the user experience by providing a seamless loading of places without the need for a page refresh.
+
+- **Amenity Filter for Place Search**: Users can now filter the search results by selecting specific amenities. The place search API endpoint has been updated to accept a list of amenities, and the front-end sends a POST request with the selected amenities to filter the search results accordingly.
+
+- **State and City Filters**: In addition to the amenity filter, users can now filter the search results by selecting specific states and cities. Checkboxes have been added to the state and city filter section, allowing users to choose the desired states and cities for their search.
+
+- **Review Display**: A new feature has been implemented to display and hide reviews for each place. Users can toggle the visibility of reviews by clicking on a "show" or "hide" button next to the "Reviews" heading. The reviews are fetched dynamically from the server when the "show" button is clicked.
+
+## Usage
+
+To run this version of the AirBnB clone locally, follow these steps:
+
+1. Set up the environment variables for the database and API
+2. Start the API server: `python api/v1/app.py`
+3. Start the Flask web application: `python web_dynamic/101-hbnb.py`
+4. Access the application in your web browser at `http://localhost:5000`
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Bugs
 No known bugs at this time. 
 
 ## Authors
-Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
-Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
-Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
-David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
 
-Second part of Airbnb: Joann Vuong
+- Yassine Mtejjal - [Github](https://github.com/Y4SS11N3)
+- Anas Mouak - [Github](https://github.com/AnasMouak)
+- Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)
+- Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
+- Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)
+- David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
+- Joann Vuong - [Github](https://github.com/jvpupcat)
+
 ## License
 Public Domain. No copy write protection. 
